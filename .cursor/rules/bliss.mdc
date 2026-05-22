@@ -1,0 +1,50 @@
+---
+description: |
+  Rules for Bliss Ventures Real Estate Portfolio Website.
+  This project is built with Next.js, Tailwind CSS, and TypeScript.
+  Content must strictly follow branding guidelines and text from /public/Bliss.pdf.
+  For images, use online real estate placeholder images until official assets are provided.
+
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.json"
+  - "**/*.mdx"
+alwaysApply: true
+---
+
+# 🏡 Project Rules
+- Company name must always appear as **Bliss Ventures**.
+- Treat the app as a portfolio/showcase site — no backend, no APIs.
+- Textual content should come from `/public/Bliss.pdf`.
+- Use **online stock/placeholder images** for now (Unsplash, Pexels, etc.).
+- Ensure design feels premium, modern, and professional — aligned with real estate branding.
+
+# 🎨 Design Rules
+- Primary highlight/background color: **#8b2727**
+- Primary font color: **#1f2020**
+- Supporting colors: light gray, white, black
+- Important section titles, headers, and callouts must use **#8b2727**.
+- Use Tailwind for styling — no external CSS frameworks or inline styles.
+- Maintain a clean grid-based layout with plenty of whitespace.
+- **Overall app width should be 90vw**, centered horizontally.
+- **Each section should have a maximum height of 90vh** to maintain balance and viewport consistency.
+
+# ⚛️ Tech Rules
+- Use **Next.js with TypeScript** (`.ts`, `.tsx`).
+- Use only **functional React components with hooks**.
+- Static content only — no backend or database.
+- Organize components into `/components` and pages into `/pages`.
+- Place all static assets (PDF, images, icons) in `/public`.
+
+# 📝 Code Style Rules
+- Follow ESLint + Prettier configuration strictly.
+- Use async/await where needed (though minimal for static site).
+- Type all props and components with TypeScript.
+- Keep components small, modular, and reusable.
+
+# 📂 Assets & Content
+- Text from `/public/Bliss.pdf` is the **source of truth**.
+- Use **online placeholder real estate images** until Bliss Ventures provides official assets.
+- No dummy filler text (like Lorem Ipsum).
+- All content must look client-ready and consistent with branding.
