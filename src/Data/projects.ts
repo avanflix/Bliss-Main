@@ -35,7 +35,7 @@ export const projects = [
       { id: 13, src: '/BO/BO_new.jpg', alt: 'Bliss One Complex', category: 'bliss-one', project: 'Bliss One' },
       { id: 17, src: '/BO/BO_ELEVATION_VIEW-2_RENDERED_IMAGE.jpg', alt: 'Bliss One Elevation View', category: 'bliss-one', project: 'Bliss One' },
     ],
-    brochure: '/BO_Brochure.pdf',
+    brochure: '/brouchers/Bliss One_Floor Plans_Handout.pdf',
     category: 'ongoing'
   },
   {

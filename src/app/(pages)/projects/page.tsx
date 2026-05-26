@@ -58,16 +58,16 @@ function ProjectsPage() {
       <section className="py-8 sm:py-10 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-12 sm:space-y-14 lg:space-y-16">
           {projects.map((project, index) => (
-            <div key={project.id} id={project.id} className={`flex flex-col lg:flex-row gap-6 sm:gap-8 ${
-              index % 2 === 1 ? 'lg:flex-row-reverse lg:gap-12' : 'lg:gap-16'
-            }`}>
+            <div key={project.id} id={project.id} className={`flex flex-col lg:flex-row gap-6 sm:gap-8 ${index % 2 === 1 ? 'lg:flex-row-reverse lg:gap-12' : 'lg:gap-16'
+              }`}>
               {/* Image */}
               <div className="lg:w-1/2">
-                <div className={`relative rounded-lg overflow-hidden shadow-xl ${
-                  project.orientation === 'portrait'
-                    ? 'aspect-[3/4] sm:aspect-[4/5] h-150 w-100'
-                    : 'aspect-[4/3] sm:aspect-[16/9] lg:h-80 xl:h-96'
-                }`}>
+                <div
+                  className={`relative rounded-lg overflow-hidden shadow-xl ${project.orientation === 'portrait'
+                      ? 'aspect-[3/4] sm:aspect-[4/5] h-96 w-74'
+                      : 'aspect-[4/3] sm:aspect-[16/9] lg:h-64 xl:h-72'
+                    }`}
+                >
                   <Image
                     src={project.image}
                     alt={project.name}
@@ -75,13 +75,12 @@ function ProjectsPage() {
                     className="object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className={`px-4 py-2 text-sm font-medium rounded-full ${
-                      project.status.includes('Completed')
+                    <span className={`px-4 py-2 text-sm font-medium rounded-full ${project.status.includes('Completed')
                         ? 'bg-green-500 text-white'
                         : project.status.includes('Under Construction')
-                        ? 'bg-blue-500 text-white'
-                        : 'bg-orange-500 text-white'
-                    }`}>
+                          ? 'bg-blue-500 text-white'
+                          : 'bg-orange-500 text-white'
+                      }`}>
                       {project.status}
                     </span>
                   </div>
@@ -94,9 +93,8 @@ function ProjectsPage() {
               </div>
 
               {/* Content */}
-              <div className={`${
-                index % 2 === 0 ? 'lg:flex-1' : 'lg:w-1/2'
-              } flex flex-col justify-center`}>
+              <div className={`${index % 2 === 0 ? 'lg:flex-1' : 'lg:w-1/2'
+                } flex flex-col justify-center`}>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1f2020] mb-2">
                   {project.name}
                 </h2>
@@ -162,7 +160,7 @@ function ProjectsPage() {
           </div>
         </div>
       </section>
-        <Footer />
+      <Footer />
 
       {/* Project Modal */}
       <ProjectModal
