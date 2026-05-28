@@ -93,10 +93,10 @@ const BlissOneFooter = () => {
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-[#8b2727] flex-shrink-0" />
                 <a
-                  href="tel:+919800014477"
+                  href="tel:+918374339608"
                   className="text-gray-300 hover:text-[#8b2727] transition-colors"
                 >
-                  +91-9800014477
+                  +91-8374339608
                 </a>
               </div>
               <div className="flex items-center space-x-3">

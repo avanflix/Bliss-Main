@@ -5,7 +5,7 @@ const FloatingActionButtons = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* WhatsApp Button */}
       <a
-        // href="https://wa.me/919800014477?text=Hi!%20I%20was%20exploring%20your%20website%20%E2%80%94%20could%20you%20share%20more%20details%20about%20your%20projects%20and%20upcoming%20ventures%3F"
+        // href="https://wa.me/918374339608?text=Hi!%20I%20was%20exploring%20your%20website%20%E2%80%94%20could%20you%20share%20more%20details%20about%20your%20projects%20and%20upcoming%20ventures%3F"
         href="https://kylas.io/"
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const FloatingActionButtons = () => {
 
       {/* Call Button */}
       <a
-        href="tel:+919800014477"
+        href="tel:+918374339608"
         className="bg-[#8b2727] hover:bg-[#6d1e1e] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
         aria-label="Call us"
       >

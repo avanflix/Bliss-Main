@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import fs from 'fs';
-import path from 'path';
+// import fs from 'fs';
+// import path from 'path';
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,29 +18,44 @@ export async function POST(request: NextRequest) {
     const user = process.env.EMAIL_USER;
     const pass = process.env.EMAIL_PASS;
 
-    // Handle brochure attachment
-    const attachments = [];
-    let brochureFilename = '';
+    // // Handle brochure attachment
+    // const attachments = [];
+    // let brochureFilename = '';
 
-    if (project === 'Bliss Bilva') brochureFilename = 'BB_FLYER.pdf';
-    else if (project === 'Sri Bliss') brochureFilename = 'SB_FLYER.pdf';
-    else if (project === 'Bliss One') brochureFilename = 'BO_Brochure.pdf';
+    // if (project === 'Bliss Bilva') brochureFilename = 'BB_FLYER.pdf';
+    // else if (project === 'Sri Bliss') brochureFilename = 'SB_FLYER.pdf';
+    // else if (project === 'Bliss One') brochureFilename = 'BO_Brochure.pdf';
 
-    if (brochureFilename) {
-      try {
-        const brochurePath = path.join(process.cwd(), 'public', brochureFilename);
-        if (fs.existsSync(brochurePath)) {
-          const brochureBuffer = fs.readFileSync(brochurePath);
-          attachments.push({
-            filename: brochureFilename,
-            content: brochureBuffer,
-            contentType: 'application/pdf'
-          });
-        }
-      } catch (error) {
-        console.error('Error reading brochure file:', error);
-        // Continue without attachment if file reading fails
-      }
+    // if (brochureFilename) {
+    //   try {
+    //     const brochurePath = path.join(process.cwd(), 'public', brochureFilename);
+    //     if (fs.existsSync(brochurePath)) {
+    //       const brochureBuffer = fs.readFileSync(brochurePath);
+    //       attachments.push({
+    //         filename: brochureFilename,
+    //         content: brochureBuffer,
+    //         contentType: 'application/pdf'
+    //       });
+    //     }
+    //   } catch (error) {
+    //     console.error('Error reading brochure file:', error);
+    //     // Continue without attachment if file reading fails
+    //   }
+    // }
+
+    const origin =
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:3000'
+        : 'https://blissventures.co';
+
+    let brochureLink = '';
+
+    if (project === 'Bliss Bilva') {
+      brochureLink = `${origin}/BB_FLYER.pdf`;
+    } else if (project === 'Sri Bliss') {
+      brochureLink = `${origin}/SB_FLYER.pdf`;
+    } else if (project === 'Bliss One') {
+      brochureLink = `${origin}/BO_Brochure.pdf`;
     }
 
     // Create transporter
@@ -102,9 +117,11 @@ export async function POST(request: NextRequest) {
                 <div class="label">Location:</div>
                 <div class="value">${location}</div>
               </div>` : ''}
-              ${attachments.length > 0 ? `<div class="field">
+              ${brochureLink ? `<div class="field">
                 <div class="label">Brochure:</div>
-                <div class="value">Attached - ${brochureFilename}</div>
+                <div class="value">
+                  <a href="${brochureLink}">Download Brochure</a>
+                </div>
               </div>` : ''}
               <div class="field">
                 <div class="label">Message:</div>
@@ -122,10 +139,9 @@ export async function POST(request: NextRequest) {
 
     const businessEmailOptions = {
       from: user,
-      to: user, // Send to yourself
+      to: user,
       subject: `New Contact Form: ${subject}`,
-      html: businessEmailHtml,
-      attachments: attachments
+      html: businessEmailHtml
     };
 
     // Email to customer
@@ -157,14 +173,20 @@ export async function POST(request: NextRequest) {
 
               <p>Our team will review your inquiry about "<strong>${project || subject}</strong>" and get back to you within 24-72 hours.</p>
 
-              ${project && attachments.length > 0 ? `<p>Please find the project brochure attached to this email for your reference.</p>` : ''}
-
+              ${brochureLink ? `
+              <p>
+                Download Project Brochure:
+                <a href="${brochureLink}">
+                  Click Here
+                </a>
+              </p>
+              ` : ''}
               <p>In the meantime, feel free to explore our website to learn more about our projects and services.</p>
 
               <div class="contact-info">
                 <h3 style="color:rgb(0, 0, 0); margin-bottom: 15px; font-weight:bold ">Contact Information</h3>
                 <div class="contact-item">
-                  <span class="label">Phone:</span> +91-9800014477
+                  <span class="label">Phone:</span> +91-8374339608
                 </div>
                 <div class="contact-item">
                   <span class="label">Email:</span> info@blissventures.co
@@ -186,10 +208,9 @@ export async function POST(request: NextRequest) {
 
     const customerEmailOptions = {
       from: user,
-      to: email, // Send to the customer
+      to: email,
       subject: 'Thank you for contacting Bliss Ventures',
-      html: customerEmailHtml,
-      attachments: attachments
+      html: customerEmailHtml
     };
 
     // Send both emails

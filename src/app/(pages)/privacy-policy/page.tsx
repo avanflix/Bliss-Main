@@ -164,7 +164,7 @@ and updating the &quot;Last Updated&quot; date. Your continued use of our servic
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <div className="space-y-2 text-sm sm:text-base">
                     <p><strong>Email:</strong> <a href="mailto:info@blissventures.co" className="text-[#8b2727] hover:underline">info@blissventures.co</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+919800014477" className="text-[#8b2727] hover:underline">+91-98-0001-4477</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+918374339608" className="text-[#8b2727] hover:underline">+91-98-0001-4477</a></p>
                     <p><strong>Address:</strong> Hyderabad, Telangana, India</p>
                   </div>
                 </div>
