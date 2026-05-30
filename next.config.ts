@@ -19,18 +19,20 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['lucide-react'],
   },
 
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: '/landing',
-        destination: 'https://bliss-one-ten.vercel.app',
+        source: "/landing",
+        destination: "https://bliss-one-ten.vercel.app",
+        permanent: false,
       },
       {
-        source: '/landing/:path*',
-        destination: 'https://bliss-one-ten.vercel.app/:path*',
+        source: "/landing/:path*",
+        destination: "https://bliss-one-ten.vercel.app/:path*",
+        permanent: false,
       },
     ];
-  },
+  }
 };
 
 export default nextConfig;
