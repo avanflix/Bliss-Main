@@ -18,6 +18,7 @@ export async function POST(request: NextRequest) {
     const user = process.env.EMAIL_USER;
     const pass = process.env.EMAIL_PASS;
 
+    console.log('name', process.env.EMAIL_USER, process.env.EMAIL_PASS);
     // // Handle brochure attachment
     // const attachments = [];
     // let brochureFilename = '';
