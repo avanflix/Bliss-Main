@@ -187,7 +187,7 @@ export async function POST(request: NextRequest) {
               <div class="contact-info">
                 <h3 style="color:rgb(0, 0, 0); margin-bottom: 15px; font-weight:bold ">Contact Information</h3>
                 <div class="contact-item">
-                  <span class="label">Phone:</span> +91-8374339608
+                  <span class="label">Phone:</span> +91-98-0001-4477
                 </div>
                 <div class="contact-item">
                   <span class="label">Email:</span> info@blissventures.co

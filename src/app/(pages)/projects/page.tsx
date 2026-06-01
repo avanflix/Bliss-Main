@@ -152,10 +152,10 @@ function ProjectsPage() {
               Contact Us Today
             </Link>
             <Link
-              href="tel:+918374339608"
+              href="tel:+9198-0001-4477"
               className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-[#8b2727] transition-colors duration-300 text-sm sm:text-base"
             >
-              Call +91-8374339608
+              Call +91-98-0001-4477
             </Link>
           </div>
         </div>
