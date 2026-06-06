@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className="flex items-center h-full">
             <Link href="/" className="flex items-center h-full">
               <Image
-                src="/logo.png"
+                src="/logo3.png"
                 alt="Bliss Ventures Logo"
                 width={NAVBAR_HEIGHT}
                 height={NAVBAR_HEIGHT}

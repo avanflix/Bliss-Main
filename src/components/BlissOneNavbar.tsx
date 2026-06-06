@@ -40,7 +40,7 @@ const BlissOneNavbar = () => {
           <div className="flex items-center">
             <Link href="/bliss-one" className="flex items-center space-x-2">
               <Image
-                src="/logo.png"
+                src="/logo3.png"
                 alt="Bliss Ventures Logo"
                 width={35}
                 height={35}
