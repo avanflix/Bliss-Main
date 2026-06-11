@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1 space-y-4">
-            <h3 className="text-xl font-bold text-white">Bliss Ventures</h3>
+            <h3 className="text-xl font-bold text-white">Bliss Ventures Private Limited</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Creating vibrant, sustainable communities where modern living meets nature,
               enabling customers to experience comfort, wellness, and a sense of belonging.
@@ -165,7 +165,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-4 pt-4 md:mt-8 md:pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Bliss Ventures. All rights reserved.
+            © 2025 Bliss Ventures Private Limited. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0 text-sm">
             <Link href="/privacy-policy" className="text-gray-400 hover:text-[#8b2727] transition-colors">

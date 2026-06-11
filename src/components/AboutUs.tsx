@@ -18,7 +18,7 @@ const AboutUs = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl pb-4 sm:pb-6 font-bold text-[#1f2020]">
-            About <span className="text-[#8b2727]">Bliss Ventures</span>
+            About <span className="text-[#8b2727]">Bliss Ventures Private Limited</span>
           </h2>
         </motion.div>
 
