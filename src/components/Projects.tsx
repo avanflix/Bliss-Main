@@ -93,7 +93,7 @@ const Projects = () => {
                       onClick={() => {
                         const link = document.createElement('a');
                         if (project.id === 'bliss-one') {
-                          link.href = '/BO_Brochure.pdf';
+                          link.href = '/brouchers/Blissone_Floor Plans_Handout.pdf';
                         } else if (project.id === 'bliss-bilva') {
                           link.href = '/BB_FLYER.pdf';
                         } else if (project.id === 'sri-bliss') {

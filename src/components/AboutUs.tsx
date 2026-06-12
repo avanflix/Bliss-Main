@@ -35,7 +35,7 @@ const AboutUs = () => {
                transition={{ duration: 0.8, delay: 0.2 }}
              >
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
-                Bliss Ventures strives to craft homes and communities that integrate thoughtful design,
+                Bliss Ventures Private Limited strives to craft homes and communities that integrate thoughtful design,
                 quality construction, and customer-first values. Our portfolio reflects a rich mix of
                 thoughtfully executed developments—from gated communities and farmland projects to
                 premium residential enclaves.
