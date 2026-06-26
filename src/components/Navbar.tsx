@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: 'Projects', href: '/projects' },
     { name: 'Board Members', href: '/board-members' },
     { name: 'Gallery', href: '/gallery' },
+    { name: 'Blogs', href: '/blogs' },
     { name: 'News & Events', href: '/news-events' },
     { name: 'Get in Touch', href: '/contact-us' },
   ];
