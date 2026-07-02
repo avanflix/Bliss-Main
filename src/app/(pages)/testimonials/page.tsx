@@ -22,11 +22,11 @@ type Testimonial = {
 };
 
 const testimonials: Testimonial[] = [
-  { id: 't1', name: 'R Purushotham', role: 'Asst Professor, PVNRTVU', videoSrc: '/testimonials/t1.mp4', poster: '/TestimonialPosters/t1.png', channelName: 'Bliss Ventures' },
-  { id: 't2', name: 'B.V.D.N Manoj', role: 'IT Professional', videoSrc: '/testimonials/t2.mp4', poster: '/TestimonialPosters/t2.png', channelName: 'Bliss Ventures' },
-  { id: 't3', name: 'KVL. Narasimha Rao', role: 'Senior Vice President', videoSrc: '/testimonials/t3.mp4', poster: '/TestimonialPosters/t3.png', channelName: 'Bliss Ventures' },
-  { id: 't4', name: 'Mr. Radha Krishna', role: 'Axis Bank Employee', videoSrc: '/testimonials/t4.mp4', poster: '/TestimonialPosters/t4.png', channelName: 'Bliss Ventures' },
-  { id: 't5', name: 'Mr. Pitchaiah Gorantla', role: 'IT Professional, Infosys', videoSrc: '/testimonials/t5.mp4', poster: '/TestimonialPosters/t5.png', channelName: 'Bliss Ventures' },
+  { id: 't1', name: 'R Purushotham', role: 'Asst Professor, PVNRTVU', videoSrc: 'https://pub-0913a3e700de498f8b8806be00adbab4.r2.dev/WhatsApp%20Video%202026-07-02%20at%202.16.47%20PM.mp4', poster: '/TestimonialPosters/t1.png', channelName: 'Bliss Ventures' },
+  { id: 't2', name: 'B.V.D.N Manoj', role: 'IT Professional', videoSrc: 'https://pub-0913a3e700de498f8b8806be00adbab4.r2.dev/WhatsApp%20Video%202026-07-02%20at%202.17.05%20PM.mp4', poster: '/TestimonialPosters/t2.png', channelName: 'Bliss Ventures' },
+  { id: 't3', name: 'KVL. Narasimha Rao', role: 'Senior Vice President', videoSrc: 'https://pub-0913a3e700de498f8b8806be00adbab4.r2.dev/WhatsApp%20Video%202026-07-02%20at%202.17.07%20PM.mp4', poster: '/TestimonialPosters/t3.png', channelName: 'Bliss Ventures' },
+  { id: 't4', name: 'Mr. Radha Krishna', role: 'Axis Bank Employee', videoSrc: 'https://pub-0913a3e700de498f8b8806be00adbab4.r2.dev/BO_REEL_RADHA_KRISHNA_TESTIMONIAL.mp4', poster: '/TestimonialPosters/t4.png', channelName: 'Bliss Ventures' },
+  { id: 't5', name: 'Mr. Pitchaiah Gorantla', role: 'IT Professional, Infosys', videoSrc: 'https://pub-0913a3e700de498f8b8806be00adbab4.r2.dev/BO_REEL_PITCHAIAH_TESTIMONIAL.mp4', poster: '/TestimonialPosters/t5.png', channelName: 'Bliss Ventures' },
 //   { id: 't6', name: 'Mr. Suresh', role: 'Business Owner', videoSrc: '/videos/t6.mp4', poster: '/videos/t6-poster.jpg', channelName: 'Bliss Ventures' },
 ];
 
