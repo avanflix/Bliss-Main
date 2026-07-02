@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: 'Gallery', href: '/gallery' },
     { name: 'Blogs', href: '/blogs' },
     { name: 'News & Events', href: '/news-events' },
+    { name: 'Testimonials', href: '/testimonials' },
     { name: 'Get in Touch', href: '/contact-us' },
   ];
 
@@ -41,7 +42,7 @@ const Navbar = () => {
           style={{ height: `${NAVBAR_HEIGHT}px` }}
         >
           {/* Logo */}
-          <div className="flex items-center h-full">
+          <div className="flex items-center h-full shrink-0">
             <Link href="/" className="flex items-center h-full">
               <Image
                 src="/logo3.png"
@@ -55,13 +56,13 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden lg:block">
+            <div className="flex items-baseline space-x-1 xl:space-x-3">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-3 text-lg font-medium transition-colors duration-200 ${
+                  className={`px-2 xl:px-3 py-2.5 text-xs xl:text-sm font-medium whitespace-nowrap transition-colors duration-200 ${
                     item.name === 'Get in Touch'
                       ? 'text-white bg-[#8b2727] rounded-lg'
                       : 'text-[#1f2020] hover:text-[#8b2727] hover:underline'
@@ -74,7 +75,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-[#1f2020] hover:text-[#8b2727] p-3"
@@ -105,7 +106,7 @@ const Navbar = () => {
                 duration: 0.35,
                 ease: [0.25, 0.46, 0.45, 0.94]
               }}
-              className="md:hidden bg-white border-t border-gray-200 overflow-hidden"
+              className="lg:hidden bg-white border-t border-gray-200 overflow-hidden"
             >
               <div className="px-2 pt-4 pb-4 space-y-2 sm:px-3">
                 {navItems.map((item, index) => (
