@@ -4,11 +4,10 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
-import BlogModal from "@/components/BlogModal";
 import { blogs, Blog } from "@/Data/blogs";
+import Link from "next/link";
 
 export default function BlogsPage() {
-    const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null);
 
     return (
         <>
@@ -41,20 +40,12 @@ export default function BlogsPage() {
                             <BlogCard
                                 key={blog.id}
                                 blog={blog}
-                                onReadMore={setSelectedBlog}
                             />
                         ))}
                     </div>
 
                 </section>
             </main>
-
-            <BlogModal
-                post={selectedBlog}
-                isOpen={selectedBlog !== null}
-                onClose={() => setSelectedBlog(null)}
-            />
-
             <Footer />
         </>
     );

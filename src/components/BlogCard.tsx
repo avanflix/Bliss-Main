@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { CalendarDays, Clock } from "lucide-react";
 import { Blog } from "@/Data/blogs";
+import Link from "next/link";
 
 interface Props {
   blog: Blog;
-  onReadMore: (blog: Blog) => void;
 }
 
 export default function BlogCard({
   blog,
-  onReadMore,
 }: Props) {
   return (
     <article className="group flex h-full w-full flex-col overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
@@ -58,12 +57,12 @@ export default function BlogCard({
 
         </p>
 
-        <button
-          onClick={() => onReadMore(blog)}
-          className="mt-auto w-fit rounded-full bg-red-900 px-7 py-3 font-semibold text-white transition hover:bg-red-900"
+        <Link
+          href={`/blogs/${blog.slug}`}
+          className="mt-auto w-fit rounded-full bg-red-900 px-7 py-3 font-semibold text-white transition hover:bg-red-800"
         >
           Read More →
-        </button>
+        </Link>
 
       </div>
 
