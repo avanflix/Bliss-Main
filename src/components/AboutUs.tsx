@@ -26,14 +26,14 @@ const AboutUs = () => {
         <div className="space-y-8 sm:space-y-10 lg:space-y-12">
           {/* Image and Description Row */}
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
-             {/* Description */}
-             <motion.div
-               className="space-y-4 sm:space-y-6"
-               initial={{ x: -100, opacity: 0 }}
-               whileInView={{ x: 0, opacity: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.8, delay: 0.2 }}
-             >
+            {/* Description */}
+            <motion.div
+              className="space-y-4 sm:space-y-6"
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
                 Bliss Ventures Private Limited strives to craft homes and communities that integrate thoughtful design,
                 quality construction, and customer-first values. Our portfolio reflects a rich mix of
@@ -61,24 +61,13 @@ const AboutUs = () => {
             {/* Image */}
             {/* Responsive animation: fade in on mobile, slide in on desktop */}
             <motion.div
-              className="relative"
-              initial={{
-                opacity: 0,
-                x: 0,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: typeof window !== 'undefined' && window.innerWidth >= 1024 ? 100 : 0,
-              }}
+              className="relative w-full"
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{
-                duration: 0.8,
-                delay: 0.4,
-                // Only slide in from right on large screens, fade in on mobile/tablet
-              }}
-              // Use a custom hook to determine screen size for SSR safety
+              transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-full aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/BO/3.jpg"
                   alt="Bliss Ventures Office"
@@ -88,7 +77,7 @@ const AboutUs = () => {
               </div>
             </motion.div>
 
-           
+
           </div>
 
           {/* Vision & Mission Below */}
