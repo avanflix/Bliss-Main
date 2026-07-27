@@ -10,21 +10,27 @@ export interface Blog {
   readTime: string;
   featured: boolean;
   fullDescription: string;
+
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
 }
+
 export const blogs: Blog[] = [
-{
-  id: 1,
-  slug: "ghatkesar-real-estate-hotspot",
-  title: "Why Ghatkesar is Hyderabad's Next Real Estate Hotspot in 2026",
-  excerpt:
-    "Discover why Ghatkesar is emerging as Hyderabad's fastest-growing real estate destination.",
-  image: "/BO/3.jpg",
-  category: "investment",
-  author: "Bliss Ventures",
-  date: "2026-05-15",
-  readTime: "8 min read",
-  featured: true,
-  fullDescription: `
+  {
+    id: 1,
+    slug: "ghatkesar-real-estate-hotspot",
+    title: "Why Ghatkesar is Hyderabad's Next Real Estate Hotspot in 2026",
+    excerpt:
+      "Discover why Ghatkesar is emerging as Hyderabad's fastest-growing real estate destination.",
+    image: "/BO/3.jpg",
+    category: "investment",
+    author: "Bliss Ventures",
+    date: "2026-05-15",
+    readTime: "8 min read",
+    featured: true,
+    fullDescription: `
 Why Ghatkesar is Hyderabad's Next Real Estate Hotspot in 2026
 
 Affordable pricing, upcoming metro connectivity, IT expansion, and gated community living make Ghatkesar one of Hyderabad's fastest-growing destinations.
@@ -66,21 +72,48 @@ Ready to explore your dream home?
 📍 Yamunampet, Ghatkesar
 🌐 blissventures.co
 📞 98 0001 4477
-`
-},
-{
-  id: 2,
-  slug: "apartment-vs-villa-vs-farmland",
-  title: "Apartment vs Villa vs Farmland: Which Investment is Right for You?",
-  excerpt:
-    "Compare apartments, villas, and farmland to discover which real estate investment best matches your lifestyle and financial goals.",
-  image: "/BO/2.jpg",
-  category: "investment",
-  author: "Bliss Ventures",
-  date: "2026-06-10",
-  readTime: "9 min read",
-  featured: false,
-  fullDescription: `
+`,
+    faqs: [
+      {
+        question: "Why is Ghatkesar considered a real estate hotspot?",
+        answer:
+          "Ghatkesar is rapidly developing due to its excellent connectivity, affordable property prices, upcoming metro expansion, proximity to IT hubs, and growing social infrastructure."
+      },
+      {
+        question: "Is Ghatkesar a good place to invest in apartments?",
+        answer:
+          "Yes. With infrastructure growth and increasing residential demand, apartments in Ghatkesar offer good appreciation potential and modern gated community living."
+      },
+      {
+        question: "What amenities are available at Bliss One?",
+        answer:
+          "Bliss One offers more than 25 premium amenities including a clubhouse, swimming pool, gym, landscaped gardens, children's play area, CCTV security, and power backup."
+      },
+      {
+        question: "How far is Ghatkesar from Hyderabad IT hubs?",
+        answer:
+          "Ghatkesar has good connectivity to Uppal, Pocharam IT Park, ECIL, and other employment hubs through the ORR and Hyderabad–Warangal Highway."
+      },
+      {
+        question: "Why choose Bliss Ventures?",
+        answer:
+          "Bliss Ventures focuses on quality construction, excellent connectivity, thoughtfully planned communities, and modern lifestyle amenities for long-term value."
+      }
+    ],
+  },
+  {
+    id: 2,
+    slug: "apartment-vs-villa-vs-farmland",
+    title: "Apartment vs Villa vs Farmland: Which Investment is Right for You?",
+    excerpt:
+      "Compare apartments, villas, and farmland to discover which real estate investment best matches your lifestyle and financial goals.",
+    image: "/BO/2.jpg",
+    category: "investment",
+    author: "Bliss Ventures",
+    date: "2026-06-10",
+    readTime: "9 min read",
+    featured: false,
+    fullDescription: `
 Apartment vs Villa vs Farmland: Which Investment is Right for You?
 
 Real estate is one of the safest long-term investments, but choosing the right property depends on your budget, financial goals, lifestyle, and future plans. Whether you're buying your first home or expanding your investment portfolio, understanding the advantages of apartments, villas, and farmland can help you make a confident decision.
@@ -211,21 +244,48 @@ Ready to find your perfect investment?
 📍 Yamunampet, Ghatkesar
 🌐 blissventures.co
 📞 98 0001 4477
-`
-},
-{
-  id: 3,
-  slug: "first-time-home-buyers-guide-hyderabad",
-  title: "The Complete First-Time Home Buyer's Guide in Hyderabad",
-  excerpt:
-    "Everything first-time homebuyers should know before purchasing an apartment in Hyderabad, from budgeting to choosing the right location.",
-  image: "/BO/1.jpg",
-  category: "home buying",
-  author: "Bliss Ventures",
-  date: "2026-06-25",
-  readTime: "10 min read",
-  featured: false,
-  fullDescription: `
+`,
+    faqs: [
+      {
+        question: "Which is a better investment: Apartment, Villa, or Farmland?",
+        answer:
+          "The right investment depends on your financial goals. Apartments are ideal for rental income and first-time buyers, villas provide luxury and privacy, while farmland is suitable for long-term wealth creation."
+      },
+      {
+        question: "Are apartments a good investment in Hyderabad?",
+        answer:
+          "Yes. Apartments in well-connected locations offer strong rental demand, good resale value, modern amenities, and long-term appreciation."
+      },
+      {
+        question: "Who should invest in villas?",
+        answer:
+          "Villas are suitable for buyers seeking privacy, larger living spaces, and premium lifestyles with long-term appreciation."
+      },
+      {
+        question: "Is farmland a safe investment?",
+        answer:
+          "Farmland can be a valuable long-term investment when proper legal verification is completed and the location has future development potential."
+      },
+      {
+        question: "Why invest with Bliss Ventures?",
+        answer:
+          "Bliss Ventures develops thoughtfully planned residential communities with excellent connectivity, premium construction quality, and modern amenities."
+      }
+    ],
+  },
+  {
+    id: 3,
+    slug: "first-time-home-buyers-guide-hyderabad",
+    title: "The Complete First-Time Home Buyer's Guide in Hyderabad",
+    excerpt:
+      "Everything first-time homebuyers should know before purchasing an apartment in Hyderabad, from budgeting to choosing the right location.",
+    image: "/BO/1.jpg",
+    category: "home buying",
+    author: "Bliss Ventures",
+    date: "2026-06-25",
+    readTime: "10 min read",
+    featured: false,
+    fullDescription: `
 The Complete First-Time Home Buyer's Guide in Hyderabad
 
 Buying your first home is one of life's biggest milestones. While it is exciting, it also requires careful planning and informed decision-making. Hyderabad continues to be one of India's fastest-growing real estate markets, offering excellent opportunities for first-time buyers.
@@ -345,6 +405,33 @@ Start your homeownership journey with confidence.
 📍 Yamunampet, Ghatkesar
 🌐 blissventures.co
 📞 98 0001 4477
-`
-}
+`,
+    faqs: [
+      {
+        question: "What should first-time homebuyers consider before purchasing a home?",
+        answer:
+          "First-time buyers should evaluate their budget, choose the right location, verify legal documents, compare home loans, and select a trusted builder."
+      },
+      {
+        question: "Why is location important when buying a home?",
+        answer:
+          "A good location improves daily convenience, property appreciation, rental demand, and access to schools, hospitals, employment hubs, and transport."
+      },
+      {
+        question: "What documents should be verified before buying an apartment?",
+        answer:
+          "Buyers should verify land ownership, RERA registration, approvals, occupancy certificates (if applicable), and other legal documents."
+      },
+      {
+        question: "Why should I choose a gated community?",
+        answer:
+          "Gated communities provide enhanced security, lifestyle amenities, landscaped open spaces, community living, and higher resale value."
+      },
+      {
+        question: "Why is Bliss One suitable for first-time homebuyers?",
+        answer:
+          "Bliss One combines excellent connectivity, premium construction, spacious floor plans, and more than 25 lifestyle amenities, making it an ideal choice for first-time buyers."
+      }
+    ],
+  }
 ];
