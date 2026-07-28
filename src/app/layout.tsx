@@ -119,6 +119,8 @@ export default function RootLayout({
             content="zScuppe2wZNvfSGo9Zat0cRlXFqLoMfnc6irdgBTEEw"
           />
 
+          <meta name="google-site-verification" content="gECjgBJYTRiR91GuPCZeyzgHjSQVlRDiRrmNfMvLmOo" />
+
           <Script
             id="structured-data"
             type="application/ld+json"
