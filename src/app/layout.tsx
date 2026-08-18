@@ -133,7 +133,7 @@ export default function RootLayout({
                     "@id": "https://blissventures.co/#organization",
                     name: "Bliss Ventures",
                     url: "https://blissventures.co",
-                    logo: "https://blissventures.co/logo.png",
+                    logo: "https://blissventures.co/logo3.png",
                     image: "https://blissventures.co/og-image.jpg",
                     description:
                       "Bliss Ventures is a trusted real estate developer in Hyderabad, offering premium gated community apartments with modern amenities and sustainable living.",

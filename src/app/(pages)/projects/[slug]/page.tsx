@@ -14,43 +14,81 @@ type ProjectPageProps = {
     }>;
 };
 
+export async function generateStaticParams() {
+    return projects.map((project) => ({
+        slug: project.id,
+    }));
+}
+
 export async function generateMetadata({
-    params,
+  params,
 }: ProjectPageProps): Promise<Metadata> {
-    const { slug } = await params;
+  const { slug } = await params;
 
-    const project = projects.find(
-        (project) => project.id === slug
-    );
+  const project = projects.find((project) => project.id === slug);
 
-    if (!project) {
-        return {
-            title: 'Project Not Found',
-            description:
-                'The requested Bliss Ventures project could not be found.',
-        };
-    }
-
+  if (!project) {
     return {
-        title:
-            project.seo?.title ||
-            `${project.name} | Bliss Ventures`,
-
-        description:
-            project.seo?.description ||
-            project.description,
-
-        keywords:
-            project.seo?.keywords || [
-                project.name,
-                project.location,
-                'Bliss Ventures',
-            ],
-
-        alternates: {
-            canonical: `/projects/${project.id}`,
-        },
+      title: 'Project Not Found',
+      description:
+        'The requested Bliss Ventures project could not be found.',
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
+  }
+
+  return {
+    title: project.seo?.title || project.name,
+
+    description:
+      project.seo?.description ||
+      project.description,
+
+    keywords: project.seo?.keywords || [],
+
+    alternates: {
+      canonical: `/projects/${project.id}`,
+    },
+
+    openGraph: {
+      type: 'website',
+
+      title:
+        project.seo?.title ||
+        project.name,
+
+      description:
+        project.seo?.description ||
+        project.description,
+
+      url: `/projects/${project.id}`,
+
+      images: [
+        {
+          url: project.image,
+          width: 1200,
+          height: 630,
+          alt: `${project.name} - ${project.location}`,
+        },
+      ],
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+
+      title:
+        project.seo?.title ||
+        project.name,
+
+      description:
+        project.seo?.description ||
+        project.description,
+
+      images: [project.image],
+    },
+  };
 }
 
 export default async function ProjectPage({
@@ -92,6 +130,9 @@ export default async function ProjectPage({
                                 <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
                                     {project.name}
                                 </h1>
+                                <p className="mt-4 text-lg sm:text-xl">
+                                    {project.seoContent?.heading}
+                                </p>
 
                                 <p className="mt-4 text-lg sm:text-xl">
                                     {project.location}
@@ -109,19 +150,31 @@ export default async function ProjectPage({
                             {/* Main Content */}
                             <div className="lg:col-span-2">
                                 <h2 className="mb-6 text-3xl font-bold text-[#1f2020]">
-                                    About {project.name}
+                                    {project.seoContent?.aboutHeading}
                                 </h2>
+
+                                <p className="mb-6 text-lg leading-8 text-gray-600">
+                                    {project.seoContent?.introduction}
+                                </p>
 
                                 <div className="whitespace-pre-line text-base leading-8 text-gray-600">
                                     {project.fullDescription}
                                 </div>
-
                                 {/* Specifications */}
                                 {project.specs && project.specs.length > 0 && (
                                     <div className="mt-10">
                                         <h2 className="mb-6 text-2xl font-bold text-[#1f2020]">
-                                            Project Highlights
+                                            {project.seoContent?.highlightsHeading}
                                         </h2>
+                                        <section className="mt-12">
+                                            <h2 className="mb-4 text-2xl font-bold text-[#1f2020]">
+                                                {project.seoContent?.locationHeading}
+                                            </h2>
+
+                                            <p className="text-base leading-8 text-gray-600">
+                                                {project.seoContent?.locationDescription}
+                                            </p>
+                                        </section>
 
                                         <div className="grid gap-4 sm:grid-cols-2">
                                             {project.specs.map((spec, index) => (

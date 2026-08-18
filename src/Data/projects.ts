@@ -23,6 +23,17 @@ export const projects = [
         'residential projects in Ghatkesar',
       ],
     },
+    seoContent: {
+      heading: '2 & 3 BHK Apartments in Ghatkesar, Hyderabad',
+      introduction:
+        'Bliss One is a premium residential project in Yamnampet, Ghatkesar, Hyderabad, offering thoughtfully designed 2 & 3 BHK apartments with modern amenities and community-focused living.',
+      aboutHeading: 'About Bliss One',
+      highlightsHeading: 'Bliss One Project Highlights',
+      locationHeading: 'Bliss One Location',
+      locationDescription:
+        'Bliss One is located in Yamnampet, Ghatkesar, Hyderabad, providing residents with a well-connected residential location and access to surrounding areas.',
+      amenitiesHeading: 'Amenities at Bliss One',
+    },
     specs: [
       '3.6 acres land area',
       '280+ residential units',
@@ -75,6 +86,23 @@ export const projects = [
         'farm community near Hyderabad',
       ],
     },
+    seoContent: {
+      heading: 'Farmland Community in Sadashivpet, Sangareddy',
+
+      introduction:
+        'Bliss Bilva is a 55+ acre master-planned farmland community in Bodhisettypalli Village, Sadashivpet, Sangareddy, Telangana, designed for weekend getaways, hobby farming and sustainable living.',
+
+      aboutHeading: 'About Bliss Bilva',
+
+      highlightsHeading: 'Bliss Bilva Project Highlights',
+
+      locationHeading: 'Bliss Bilva Location',
+
+      locationDescription:
+        'Bliss Bilva is located in Bodhisettypalli Village, Sadashivpet, Sangareddy, Telangana, approximately 45 km from Hyderabad, offering a peaceful countryside setting for weekend and farm-based living.',
+
+      amenitiesHeading: 'Bliss Bilva Amenities',
+    },
     specs: [
       '55+ acres land area',
       'Curated farmland plots',
@@ -125,6 +153,23 @@ export const projects = [
         'residential projects in Hyderabad',
       ],
     },
+    seoContent: {
+      heading: 'Premium Residential Project in Golconda Hills, Hyderabad',
+
+      introduction:
+        'Sri Bliss is an exclusive residential development in Golconda Hills, Neknampur, Hyderabad, designed to provide luxurious living spaces in a premium residential location.',
+
+      aboutHeading: 'About Sri Bliss',
+
+      highlightsHeading: 'Sri Bliss Project Highlights',
+
+      locationHeading: 'Sri Bliss Location',
+
+      locationDescription:
+        'Sri Bliss is located in Golconda Hills, Neknampur, Hyderabad, offering residents a premium residential address in one of the established areas of the city.',
+
+      amenitiesHeading: 'Sri Bliss Amenities',
+    },
     specs: [
       ' Golconda Hills, Neknampur, Hyderabad',
       'Exclusive residential',
@@ -170,6 +215,23 @@ export const projects = [
         'premium apartments in Hyderabad',
       ],
     },
+    seoContent: {
+      heading: 'Premium Residential Project in Golconda Hills, Hyderabad',
+
+      introduction:
+        'Bliss Fort View is a premium residential development in Golconda Hills, Neknampur, Hyderabad, offering modern living spaces with scenic surroundings.',
+
+      aboutHeading: 'About Bliss Fort View',
+
+      highlightsHeading: 'Bliss Fort View Project Highlights',
+
+      locationHeading: 'Bliss Fort View Location',
+
+      locationDescription:
+        'Bliss Fort View is located in Golconda Hills, Neknampur, Hyderabad, providing residents with a residential setting known for its scenic surroundings.',
+
+      amenitiesHeading: 'Bliss Fort View Amenities',
+    },
     specs: [
       'Scenic Golconda Hills location',
       'Modern residential layouts',
@@ -202,6 +264,23 @@ export const projects = [
         'residential projects in Hyderabad',
       ],
     },
+    seoContent: {
+      heading: 'Premium Residential Project in Hitech City, Hyderabad',
+
+      introduction:
+        'Bliss Castle is a landmark residential project in Shilpa Layout, Hitech City, Hyderabad, offering gated community living with modern amenities and thoughtfully planned residential spaces.',
+
+      aboutHeading: 'About Bliss Castle',
+
+      highlightsHeading: 'Bliss Castle Project Highlights',
+
+      locationHeading: 'Bliss Castle Location',
+
+      locationDescription:
+        'Bliss Castle is located in Shilpa Layout, Hitech City, Hyderabad, providing convenient access to the surrounding Hitech City area and its business and urban facilities.',
+
+      amenitiesHeading: 'Bliss Castle Amenities',
+    },
     specs: [
       'Prime Hitech City location',
       'Gated community',
@@ -233,6 +312,23 @@ export const projects = [
         'apartments in Shilpa Layout',
         'premium residential projects Hyderabad',
       ],
+    },
+    seoContent: {
+      heading: 'Premium Residential Enclave in Hitech City, Hyderabad',
+
+      introduction:
+        'Bliss Paradise is a completed premium residential enclave in Shilpa Layout, Hitech City, Hyderabad, offering modern facilities and serene surroundings for comfortable urban living.',
+
+      aboutHeading: 'About Bliss Paradise',
+
+      highlightsHeading: 'Bliss Paradise Project Highlights',
+
+      locationHeading: 'Bliss Paradise Location',
+
+      locationDescription:
+        'Bliss Paradise is located in Shilpa Layout, Hitech City, Hyderabad, providing residents with an established residential setting close to the Hitech City business hub.',
+
+      amenitiesHeading: 'Bliss Paradise Amenities',
     },
     specs: [
       'Shilpa Layout, Hitech City',
@@ -270,6 +366,23 @@ export const projects = [
         'apartments in Sri Ramnagar',
         'residential communities in Hyderabad',
       ],
+    },
+    seoContent: {
+      heading: 'Residential Community in Hitech City, Hyderabad',
+
+      introduction:
+        'Bliss Residency is a family-friendly residential community in Sri Ramnagar, Hitech City, Hyderabad, offering comfortable living with convenient access to the surrounding business hub.',
+
+      aboutHeading: 'About Bliss Residency',
+
+      highlightsHeading: 'Bliss Residency Project Highlights',
+
+      locationHeading: 'Bliss Residency Location',
+
+      locationDescription:
+        'Bliss Residency is located in Sri Ramnagar, Hitech City, Hyderabad, offering residents convenient access to Hitech City and its surrounding business and urban facilities.',
+
+      amenitiesHeading: 'Bliss Residency Amenities',
     },
     specs: [
       'Sri Ramnagar, Hitech City',

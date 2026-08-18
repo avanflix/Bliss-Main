@@ -120,7 +120,6 @@ const Footer = () => {
           </div>
 
           {/* Our Projects */}
-          {/* Our Projects */}
           <div className="col-span-2 lg:col-span-1 space-y-4">
             <h4 className="text-lg font-semibold text-white">Our Projects</h4>
 
