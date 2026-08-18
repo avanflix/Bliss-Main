@@ -120,42 +120,71 @@ const Footer = () => {
           </div>
 
           {/* Our Projects */}
+          {/* Our Projects */}
           <div className="col-span-2 lg:col-span-1 space-y-4">
             <h4 className="text-lg font-semibold text-white">Our Projects</h4>
+
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/projects?project=bliss-one" className="text-gray-300 hover:text-[#8b2727] transition-colors">
+                <Link
+                  href="/projects/bliss-one"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
                   Bliss One - Yamnampet, Ghatkesar, Hyderabad
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=bliss-bilva" className="text-gray-300 hover:text-[#8b2727] transition-colors">
+                <Link
+                  href="/projects/bliss-bilva"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
                   Bliss Bilva - Sangareddy
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=sri-bliss" className="text-gray-300 hover:text-[#8b2727] transition-colors">
-                Sri Bliss - Golconda Hills, Neknampur, Hyderabad
+                <Link
+                  href="/projects/sri-bliss"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
+                  Sri Bliss - Golconda Hills, Neknampur, Hyderabad
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=bliss-fort-view" className="text-gray-300 hover:text-[#8b2727] transition-colors">
-                Bliss Fort View - Golconda Hills, Neknampur, Hyderabad
+                <Link
+                  href="/projects/bliss-fort-view"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
+                  Bliss Fort View - Golconda Hills, Neknampur, Hyderabad
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=bliss-castle" className="text-gray-300 hover:text-[#8b2727] transition-colors">
-                Bliss Castle - Shilpa Layout, Hitech City
+                <Link
+                  href="/projects/bliss-castle"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
+                  Bliss Castle - Shilpa Layout, Hitech City
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=bliss-paradise" className="text-gray-300 hover:text-[#8b2727] transition-colors">
-                Bliss Paradise - Shilpa Layout, Hitech City
+                <Link
+                  href="/projects/bliss-paradise"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
+                  Bliss Paradise - Shilpa Layout, Hitech City
                 </Link>
               </li>
+
               <li>
-                <Link href="/projects?project=bliss-residency" className="text-gray-300 hover:text-[#8b2727] transition-colors">
-                Bliss Residency - Sri Ramnagar, Hitech City
+                <Link
+                  href="/projects/bliss-residency"
+                  className="text-gray-300 hover:text-[#8b2727] transition-colors"
+                >
+                  Bliss Residency - Sri Ramnagar, Hitech City
                 </Link>
               </li>
             </ul>

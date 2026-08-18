@@ -9,6 +9,20 @@ export const projects = [
     image: '/BO/3.jpg',
     orientation: 'landscape',
     description: `Premium residential project in Yamnampet,Ghatkesar, Hyderabad.`,
+    seo: {
+      title: 'Bliss One | 2 & 3 BHK Apartments in Ghatkesar',
+      description:
+        'Bliss One offers 2 & 3 BHK apartments in Yamnampet, Ghatkesar, Hyderabad, with modern amenities and community-focused living.',
+      keywords: [
+        'Bliss One',
+        'Bliss One Ghatkesar',
+        '2 BHK apartments in Ghatkesar',
+        '3 BHK apartments in Ghatkesar',
+        'apartments in Ghatkesar',
+        'flats in Ghatkesar',
+        'residential projects in Ghatkesar',
+      ],
+    },
     specs: [
       '3.6 acres land area',
       '280+ residential units',
@@ -47,6 +61,20 @@ export const projects = [
     image: '/BB/BB_new.jpg',
     orientation: 'landscape',
     description: `55+ acre master-planned farmland community.`,
+    seo: {
+      title: 'Bliss Bilva | Farmland Community in Sangareddy',
+      description:
+        'Bliss Bilva is a 55+ acre master-planned farmland community in Sadashivpet, Sangareddy, Telangana, designed for weekend getaways, hobby farming and sustainable living.',
+      keywords: [
+        'Bliss Bilva',
+        'Bliss Bilva Sangareddy',
+        'farmland in Sangareddy',
+        'farmland projects in Sangareddy',
+        'farm plots in Sangareddy',
+        'farmland near Hyderabad',
+        'farm community near Hyderabad',
+      ],
+    },
     specs: [
       '55+ acres land area',
       'Curated farmland plots',
@@ -83,6 +111,20 @@ export const projects = [
     image: '/SB/SB_new.jpg',
     orientation: 'landscape',
     description: `Exclusive development in Golconda Hills.`,
+    seo: {
+      title: 'Sri Bliss | Residential Project in Golconda Hills, Hyderabad',
+      description:
+        'Sri Bliss is an exclusive residential development in Golconda Hills, Neknampur, Hyderabad, offering luxurious living spaces in a premium location.',
+      keywords: [
+        'Sri Bliss',
+        'Sri Bliss Hyderabad',
+        'Sri Bliss Neknampur',
+        'apartments in Golconda Hills',
+        'residential projects in Golconda Hills',
+        'apartments in Neknampur',
+        'residential projects in Hyderabad',
+      ],
+    },
     specs: [
       ' Golconda Hills, Neknampur, Hyderabad',
       'Exclusive residential',
@@ -114,6 +156,20 @@ export const projects = [
     image: '/BF/1.png',
     orientation: 'landscape',
     description: `Premium residential project in Golconda Hills.`,
+    seo: {
+      title: 'Bliss Fort View | Residential Project in Golconda Hills',
+      description:
+        'Bliss Fort View is a completed premium residential development in Golconda Hills, Neknampur, Hyderabad, offering scenic views and modern living spaces.',
+      keywords: [
+        'Bliss Fort View',
+        'Bliss Fort View Hyderabad',
+        'Bliss Fort View Neknampur',
+        'apartments in Golconda Hills',
+        'residential projects in Neknampur',
+        'residential projects in Hyderabad',
+        'premium apartments in Hyderabad',
+      ],
+    },
     specs: [
       'Scenic Golconda Hills location',
       'Modern residential layouts',
@@ -132,6 +188,20 @@ export const projects = [
     image: '/BC/6.png',
     orientation: 'portrait',
     description: `Landmark residential project in Hitech City.`,
+    seo: {
+      title: 'Bliss Castle | Residential Project in Hitech City',
+      description:
+        'Bliss Castle is a landmark residential project in Shilpa Layout, Hitech City, Hyderabad, offering premium community living with modern amenities.',
+      keywords: [
+        'Bliss Castle',
+        'Bliss Castle Hyderabad',
+        'Bliss Castle Hitech City',
+        'apartments in Hitech City',
+        'residential projects in Hitech City',
+        'apartments in Shilpa Layout',
+        'residential projects in Hyderabad',
+      ],
+    },
     specs: [
       'Prime Hitech City location',
       'Gated community',
@@ -150,6 +220,20 @@ export const projects = [
     image: '/BP/3.jpeg',
     orientation: 'landscape',
     description: `Premium residential enclave in Shilpa Layout.`,
+    seo: {
+      title: 'Bliss Paradise | Residential Project in Hitech City',
+      description:
+        'Bliss Paradise is a completed premium residential enclave in Shilpa Layout, Hitech City, Hyderabad, offering modern facilities and serene surroundings.',
+      keywords: [
+        'Bliss Paradise',
+        'Bliss Paradise Hyderabad',
+        'Bliss Paradise Hitech City',
+        'apartments in Hitech City',
+        'residential projects in Hitech City',
+        'apartments in Shilpa Layout',
+        'premium residential projects Hyderabad',
+      ],
+    },
     specs: [
       'Shilpa Layout, Hitech City',
       'Premium residential',
@@ -173,6 +257,20 @@ export const projects = [
     image: '/BR/7.jpeg',
     orientation: 'portrait',
     description: `Residential community in Sri Ramnagar.`,
+    seo: {
+      title: 'Bliss Residency | Residential Community in Hitech City',
+      description:
+        'Bliss Residency is a completed residential community in Sri Ramnagar, Hitech City, Hyderabad, offering family-friendly living with convenient access to the business hub.',
+      keywords: [
+        'Bliss Residency',
+        'Bliss Residency Hyderabad',
+        'Bliss Residency Hitech City',
+        'apartments in Hitech City',
+        'residential projects in Hitech City',
+        'apartments in Sri Ramnagar',
+        'residential communities in Hyderabad',
+      ],
+    },
     specs: [
       'Sri Ramnagar, Hitech City',
       'Residential community',
