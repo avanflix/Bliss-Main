@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Bliss Ventures is a trusted real estate developer in Hyderabad, offering thoughtfully designed premium gated community apartments with world-class amenities, exceptional connectivity, and sustainable living. Discover Bliss One in Ghatkesar.",
+    "Explore premium residential projects in Hyderabad by Bliss Ventures. Discover thoughtfully planned communities, modern homes and investment opportunities.",
 
   keywords: [
     "Bliss Ventures",

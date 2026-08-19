@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { blogs } from "@/Data/blogs";
+import { projects } from "@/Data/projects";
+
+const baseUrl = "https://blissventures.co";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://blissventures.co";
-
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -67,6 +68,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Dynamic project pages
+  const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
+    url: `${baseUrl}/projects/${project.id}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
+  // Dynamic blog pages
   const blogPages: MetadataRoute.Sitemap = blogs.map((blog) => ({
     url: `${baseUrl}/blogs/${blog.slug}`,
     lastModified: new Date(blog.date),
@@ -74,5 +84,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [
+    ...staticPages,
+    ...projectPages,
+    ...blogPages,
+  ];
 }
