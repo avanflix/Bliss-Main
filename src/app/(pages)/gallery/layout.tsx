@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: '/gallery',
+    canonical: 'https://www.blissventures.co/gallery',
   },
 };
 

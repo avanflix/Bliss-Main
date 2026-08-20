@@ -49,7 +49,7 @@ export async function generateMetadata({
     keywords: project.seo?.keywords || [],
 
     alternates: {
-      canonical: `/projects/${project.id}`,
+      canonical: `https://www.blissventures.co/projects/${project.id}`,
     },
 
     openGraph: {

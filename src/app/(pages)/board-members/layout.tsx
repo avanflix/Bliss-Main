@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: '/board-members',
+    canonical: 'https://www.blissventures.co/board-members',
   },
 };
 

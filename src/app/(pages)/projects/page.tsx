@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Explore residential and farmland projects by Bliss Ventures across Hyderabad and Telangana.',
   alternates: {
-    canonical: '/projects',
+    canonical: 'https://www.blissventures.co/projects',
   },
 };
 

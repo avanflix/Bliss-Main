@@ -35,7 +35,7 @@ export async function generateMetadata({
     };
   }
 
-  const url = `https://blissventures.co/blogs/${blog.slug}`;
+  const url = `https://www.blissventures.co/blogs/${blog.slug}`;
 
   return {
     title: blog.title,
@@ -56,7 +56,7 @@ export async function generateMetadata({
     authors: [
       {
         name: "Bliss Ventures",
-        url: "https://blissventures.co",
+        url: "https://www.blissventures.co",
       },
     ],
 
@@ -94,7 +94,7 @@ export async function generateMetadata({
 
       images: [
         {
-          url: `https://blissventures.co${blog.image}`,
+          url: `https://www.blissventures.co${blog.image}`,
           width: 1200,
           height: 630,
           alt: blog.title,
@@ -111,7 +111,7 @@ export async function generateMetadata({
 
       creator: "@blissventures",
 
-      images: [`https://blissventures.co${blog.image}`],
+      images: [`https://www.blissventures.co${blog.image}`],
     },
   };
 }
@@ -146,7 +146,7 @@ export default async function BlogDetails({
               headline: blog.title,
               description: blog.excerpt,
 
-              image: [`https://blissventures.co${blog.image}`],
+              image: [`https://www.blissventures.co${blog.image}`],
 
               datePublished: new Date(blog.date).toISOString(),
               dateModified: new Date(blog.date).toISOString(),
@@ -161,13 +161,13 @@ export default async function BlogDetails({
                 name: "Bliss Ventures",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://blissventures.co/logo.png",
+                  url: "https://www.blissventures.co/logo.png",
                 },
               },
 
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": `https://blissventures.co/blogs/${blog.slug}`,
+                "@id": `https://www.blissventures.co/blogs/${blog.slug}`,
               },
             },
 
@@ -180,19 +180,19 @@ export default async function BlogDetails({
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://blissventures.co",
+                  item: "https://www.blissventures.co",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Blogs",
-                  item: "https://blissventures.co/blogs",
+                  item: "https://www.blissventures.co/blogs",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: blog.title,
-                  item: `https://blissventures.co/blogs/${blog.slug}`,
+                  item: `https://www.blissventures.co/blogs/${blog.slug}`,
                 },
               ],
             },

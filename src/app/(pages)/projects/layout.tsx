@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'real estate projects Telangana',
   ],
   alternates: {
-    canonical: '/projects',
+    canonical: 'https://www.blissventures.co/projects',
   },
   openGraph: {
     title: 'Our Projects | Bliss Ventures',

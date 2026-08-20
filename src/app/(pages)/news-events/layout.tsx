@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: '/news-events',
+    canonical: 'https://www.blissventures.co/news-events',
   },
 };
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: '/blogs',
+    canonical: 'https://www.blissventures.co/blogs',
   },
 };
 

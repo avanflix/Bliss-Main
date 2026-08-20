@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: '/contact-us',
+    canonical: 'https://www.blissventures.co/contact-us',
   },
 };
 
