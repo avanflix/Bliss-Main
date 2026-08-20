@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://blissventures.co"),
+  metadataBase: new URL("https://www.blissventures.co"),
 
   title: {
     default: "Bliss Ventures | Premium Gated Community Apartments in Hyderabad",
