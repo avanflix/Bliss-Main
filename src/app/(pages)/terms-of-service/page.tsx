@@ -166,7 +166,7 @@ const TermsOfService = () => {
                     <p><strong>Email:</strong> <a href="mailto:info@blissventures.co" className="text-[#8b2727] hover:underline">info@blissventures.co</a></p>
                     <p><strong>Phone:</strong> <a href="tel:+9198-0001-4477" className="text-[#8b2727] hover:underline">+91-98-0001-4477</a></p>
                     <p><strong>Address:</strong> Hyderabad, Telangana, India</p>
-                    <p><strong>Website:</strong> <a href="https://blissventures.co/" className="text-[#8b2727] hover:underline">https://blissventures.co/</a></p>
+                    <p><strong>Website:</strong> <a href="https://www.blissventures.co/" className="text-[#8b2727] hover:underline">https://www.blissventures.co/</a></p>
                   </div>
                 </div>
               </div>

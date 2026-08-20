@@ -11,8 +11,8 @@ export default function robots(): MetadataRoute.Robots {
       ],
     },
 
-    sitemap: "https://blissventures.co/sitemap.xml",
+    sitemap: "https://www.blissventures.co/sitemap.xml",
 
-    host: "https://blissventures.co",
+    host: "https://www.blissventures.co",
   };
 }

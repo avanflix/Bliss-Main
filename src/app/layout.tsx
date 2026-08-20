@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Bliss Ventures",
-      url: "https://blissventures.co",
+      url: "https://www.blissventures.co",
     },
   ],
 
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://blissventures.co",
+    url: "https://www.blissventures.co",
     siteName: "Bliss Ventures",
 
     title: "Bliss Ventures | Premium Gated Community Apartments in Hyderabad",
@@ -130,11 +130,11 @@ export default function RootLayout({
                 "@graph": [
                   {
                     "@type": "Organization",
-                    "@id": "https://blissventures.co/#organization",
+                    "@id": "https://www.blissventures.co/#organization",
                     name: "Bliss Ventures",
-                    url: "https://blissventures.co",
-                    logo: "https://blissventures.co/logo3.png",
-                    image: "https://blissventures.co/og-image.jpg",
+                    url: "https://www.blissventures.co",
+                    logo: "https://www.blissventures.co/logo3.png",
+                    image: "https://www.blissventures.co/og-image.jpg",
                     description:
                       "Bliss Ventures is a trusted real estate developer in Hyderabad, offering premium gated community apartments with modern amenities and sustainable living.",
                     sameAs: [
@@ -153,10 +153,10 @@ export default function RootLayout({
                   },
                   {
                     "@type": "RealEstateAgent",
-                    "@id": "https://blissventures.co/#realestate",
+                    "@id": "https://www.blissventures.co/#realestate",
                     name: "Bliss Ventures",
-                    url: "https://blissventures.co",
-                    image: "https://blissventures.co/og-image.jpg",
+                    url: "https://www.blissventures.co",
+                    image: "https://www.blissventures.co/og-image.jpg",
                     address: {
                       "@type": "PostalAddress",
                       addressLocality: "Hyderabad",
